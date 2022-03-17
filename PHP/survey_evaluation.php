@@ -13,7 +13,7 @@ function evaluationData(){
   if($_SESSION["q1"]==3) $evaluationResult+=1;
   if($_SESSION["q2"]==0) $evaluationResult+=1;
   if($_SESSION["q3"]==3) $evaluationResult+=1;
-  if($_SESSION["q4"]==1) $evaluationResult+=1;
+  if($_SESSION["q4"]>0) $evaluationResult+=1;
   if($_SESSION["q5"]==3) $evaluationResult+=1;
   if($_SESSION["q6"]>1) $evaluationResult+=1;
   if($_SESSION["q7"]>1) $evaluationResult+=1;
@@ -78,10 +78,10 @@ Essen Sie mehr Gemüse! Diese Auswertung ersetzt nicht die fundierte Meinung ein
 
       <!-- bootstrap middle automatic centered col--> 
 
-      <div class="col-lg d-flex">
-        <img style="opacity:<?=$o1?>" class="image" src="images/healthy1.jpg" alt="Superheroes"> 
-        <img style="opacity:<?=$o2?>" class="image" src="images/healthy2.jpg" alt="Superheroes"> 
-        <img style="opacity:<?=$o3?>" class="image" src="images/healthy3.jpg" alt="Superheroes">       
+      <div class="col-lg d-lg-flex">
+        <div><img style="opacity:<?=$o1?>" class="image" src="images/healthy1.jpg" alt="Superheroes"></div>
+        <div><img style="opacity:<?=$o2?>" class="image" src="images/healthy2.jpg" alt="Superheroes"></div>
+        <div><img style="opacity:<?=$o3?>" class="image" src="images/healthy3.jpg" alt="Superheroes"></div>       
       </div>
     </form>      
 
