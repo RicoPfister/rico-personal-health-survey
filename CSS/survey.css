@@ -1,0 +1,38 @@
+.container{
+    margin-top: 6rem;
+}
+
+html, body{
+    margin:0px;
+    height:100%;
+  }
+
+/* form adjustments */
+
+.navbar{
+    background: rgb(0,46,0);
+}
+
+.form-range{
+width: 100px;
+}
+
+.number{
+width: 50px;
+}
+
+.image{
+height: 250px;
+}
+
+.evalTitle {
+    background: grey;
+}
+
+/*
+
+.evalCol{
+
+   }
+
+*/
