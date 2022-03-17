@@ -15,9 +15,10 @@
           [Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
           ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam]</p>
 
-          <form action="survey.php" methode="get">
+          <form name="evaluation" action="survey.php" methode="get" onsubmit="return validateForm('age')";>
             <label for="age">Bitte geben Sie Ihr <strong>Alter</strong> an und es kann losgehen:</label>
-            <input class="number" type="number" id="age" name="age">  
+            <input class="number" type="number" name="age">
+            <p class="m-0 text-danger fw-bold" id="alert"></p>
 
         </div>
 
@@ -38,7 +39,7 @@
       <!-- bootstrap middle automatic centered col--> 
 
       <div class="col-lg-5 mt-4">
-        <button>Los geht's</button>        
+        <button type="submit" class="btn btn-success me-2">Los Geht's</button></form>       
       </div>
     </form>      
 

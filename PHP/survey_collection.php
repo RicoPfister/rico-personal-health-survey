@@ -17,7 +17,9 @@ $questionPhrases = [
 
 session_start();
 
-// go to current/next/previous question
+// go to current/next/previous question7
+
+global $i;
 
 for($i=1; $i<=count($questionPhrases); $i++){
 
@@ -48,7 +50,7 @@ function inputVariation($i){
 
     case "q1":
     
-    $GLOBALS['inputVariationForm'] = "1<input type='range' class='form-range' id='customRange1' min='1' max='5' name='q$i'>5";      
+    $GLOBALS['inputVariationForm'] = "1<input type='range' class='form-range' min='1' max='5' name='q$i' id='q$i'>5";      
     break;
     
     // question 2: check
@@ -58,12 +60,12 @@ function inputVariation($i){
     $GLOBALS['inputVariationForm'] =
     
     "<div class='form-check'>
-      <input class='form-check-input' type='radio' name='q2' value='1' id='flexRadioDefault1'>
-      <label class='form-check-label' for='check1'>Ja</label>
+      <input class='form-check-input' type='radio' name='q$i' value='1' id='q$i'>
+      <label class='form-check-label' for='q2'>Ja</label>
     </div>
     <div class='form-check'>
-      <input class='form-check-input' type='radio' name='q2' value='0' id='flexRadioDefault2'>
-      <label class='form-check-label' for='check1'>Nein</label>
+      <input class='form-check-input' type='radio' name='q$i' value='0' id='q$i'>
+      <label class='form-check-label' for='q2'>Nein</label>
     </div>";      
     break;
 
@@ -78,15 +80,22 @@ function inputVariation($i){
 
     case "q4":
 
-    $q4Array = ["Keine zusätzliche körperliche Aktivität" => "0", "Gewichte heben" => "1", "Gehen" => "1", "Wandern" => "1", "Joggen" => "1", "Rennen" => "1", "Schwimmen" => "1", "Tanzen" => "1", "Aerobics" => "1", "Pilates" => "1", "Team Sport" => "1"];
+    $q4Array = ["Gewichte heben" => "1", "Gehen" => "2", "Wandern" => "3", "Joggen" => "4", "Rennen" => "5", "Schwimmen" => "6", "Tanzen" => "7", "Aerobics" => "8", "Pilates" => "9", "Team Sport" => "10"];
+    
+    $GLOBALS['inputVariationForm'] = 
+
+      "<div class='form-check'>
+        <input class='form-check-input' type='radio' name='q4' value='0' id='q4' checked>
+        <label class='form-check-label' for='q4'>Keine zusätzliche körperliche Aktivität</label>
+      </div>";
     
     foreach($q4Array as $key => $val){
 
       $GLOBALS['inputVariationForm'] .=      
     
       "<div class='form-check'>
-        <input class='form-check-input' type='radio' name='q4' value=$val id='check2'>
-        <label class='form-check-label' for='check2'>$key</label>
+        <input class='form-check-input' type='radio' name='q$i' value=$val id='q$i'>
+        <label class='form-check-label' for='q$i'>$key</label>
       </div>";
 
       }
@@ -94,8 +103,8 @@ function inputVariation($i){
     $GLOBALS['inputVariationForm'] .= 
 
     "<div class='form-check'>
-      <input class='form-check-input' type='radio' name='q4' value='1'>
-      <input type='text' placeholder='Andere gesunde Aktivität'></input>
+      <input class='form-check-input' type='radio' name='q4' value='11' id='q4'>
+      <input type='text' id='q4Text' placeholder='Andere gesunde Aktivität'></input>
     </div>";
           
     break;
@@ -126,7 +135,7 @@ function inputVariation($i){
 
 ?>
 
-<form action="survey.php" methode="get">
+<form name="evaluation" action="survey.php" methode="get" onsubmit="return validateForm('q<?=$i?>')";>
 
   <!-- bootstrap container-->
 
@@ -158,10 +167,11 @@ function inputVariation($i){
 
   <div class="col-lg"></div>
 
-    <!-- bootstrap middle automatic centered colored col--> 
+    <!-- bootstrap middle automatic centered col with border--> 
 
       <div class="evalCol col-lg-5 mt-3 border">
         <?=$inputVariationForm?>
+        <p class="m-0 text-danger fw-bold" id="alert"></p>
       </div>
 
   <!-- bootstrap outer right invisible col--> 

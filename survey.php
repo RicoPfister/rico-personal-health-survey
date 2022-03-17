@@ -73,6 +73,8 @@ else {include 'PHP/survey_starting.php';}
 include 'PHP/footer.php';
 ?>
 
+<script type="text/javascript" src="JS/survey.js"></script
+
 </body>
 
 </html>
