@@ -22,7 +22,7 @@ session_start();
 for($i=1; $i<=count($questionPhrases); $i++){
 
   if($_SESSION["q$i"] == ""){
-
+       
       if($_SESSION["goBack"]){
         $i--;
         $question = $questionPhrases["q$i"];
@@ -48,7 +48,7 @@ function inputVariation($i){
 
     case "q1":
     
-    $GLOBALS['inputVariationForm'] = "Überhaupt nicht gesund<input type='range' class='form-range' id='customRange1' min='1' max='5' name='q$i'>Extrem gesund";      
+    $GLOBALS['inputVariationForm'] = "1<input type='range' class='form-range' id='customRange1' min='1' max='5' name='q$i'>5";      
     break;
     
     // question 2: check
@@ -71,7 +71,7 @@ function inputVariation($i){
 
     case "q3":
 
-    $GLOBALS['inputVariationForm'] = "Überhaupt nicht wichtig<input type='range' class='form-range' id='customRange1' min='1' max='5' name='q$i'>Sehr wichtig";      
+    $GLOBALS['inputVariationForm'] = "1<input type='range' class='form-range' id='customRange1' min='1' max='5' name='q$i'>5";      
     break;    
 
     // check
@@ -104,7 +104,7 @@ function inputVariation($i){
 
     case "q5":
 
-    $GLOBALS['inputVariationForm'] = "Viel zu wenig<input type='range' class='form-range' id='customRange1' min='1' max='5' name='q$i'>viel zu viel";      
+    $GLOBALS['inputVariationForm'] = "1<input type='range' class='form-range' id='customRange1' min='1' max='5' name='q$i'>5";      
     break;    
 
     // number
@@ -124,112 +124,76 @@ function inputVariation($i){
 
 // create form
 
-/*echo 
-
-"<form action='survey.php' method='get'>
-  <div class='row justify-content-center'>
-    <div class='col-6 mb-3'>
-      <label for='question'>".$question."</label>
-    </div>
-  </div>
-  <div class='row justify-content-center'>
-    <div class='col-6 mb-3'>". $inputVariationForm ."</div>
-  </div>
-  <div class='row justify-content-center'>
-    <div class='col-1 mb-3 text-center'>
-      <button>Weiter</button>
-    </div>
-  </div>
-</form>
-
-<form action='survey.php' method='get'>
-  <input type='hidden' name='deleteData' value='yes'>
-  <div class='row justify-content-center'>
-    <div class='col-2 mb-3 text-center'>
-      <button>Daten löschen</button>
-    </div>
-  </div>
-</form>
-
-<form action='survey.php' method='get'>
-  <input type='hidden' name='goBack' value='yes'>
-  <div class='row justify-content-center'>
-    <div class='col-2 mb-3 text-center'>
-      <button>Zurück</button>
-    </div>
-  </div>
-</form>"
-
-*/
-
 ?>
 
 <form action="survey.php" methode="get">
 
-<!-- bootstrap container-->
+  <!-- bootstrap container-->
 
-  <!-- bootstrap row1 title evaluation question--> 
-
-  <div class="row">
-
-      <!-- bootstrap outer left invisible col--> 
-
-      <div class="col-lg"></div>
-
-        <!-- bootstrap middle automatic centered colored col--> 
-
-        <div class="evalTitle col-lg-5">
-          <h5 class="m-0"><?=$question?></h5>
-        </div>
-
-    <!-- bootstrap outer right invisible col--> 
-
-    <div class="col-lg"></div>
-
-  </div>
-
-    <!-- bootstrap row2 form --> 
+    <!-- bootstrap row1 title evaluation question--> 
 
     <div class="row">
 
-<!-- bootstrap outer left invisible col--> 
+        <!-- bootstrap outer left invisible col--> 
 
-<div class="col-lg"></div>
+        <div class="col-lg"></div>
 
-  <!-- bootstrap middle automatic centered colored col--> 
+          <!-- bootstrap middle automatic centered colored col--> 
 
-    <div class="evalCol col-lg-5 mt-3 border">
-      <?=$inputVariationForm?>
-    </div>
+          <div class="evalTitle col-lg-5">
+            <h5 class="m-0"><?=$question?></h5>
+          </div>
 
-<!-- bootstrap outer right invisible col--> 
-
-<div class="col-lg"></div>
-
-</div>
-
-  <!-- bootstrap row3 buttons --> 
-
-  <div class="row">
-
-      <!-- bootstrap outer left invisible col--> 
+      <!-- bootstrap outer right invisible col--> 
 
       <div class="col-lg"></div>
 
-        <!-- bootstrap middle automatic centered col--> 
+    </div>
 
-            <div class="col-lg"></div>
-              <div class="col-lg-5 mt-3">
-                <button class="me-2">Weiter</button>
-                <button class="me-2">Weiter</button>
-                <button>Weiter</button>
-              </div>
-            <div class="col-lg"></div> 
+      <!-- bootstrap row2 form --> 
 
-    <!-- bootstrap outer right invisible col--> 
+      <div class="row">
 
-    <div class="col-lg"></div>
+  <!-- bootstrap outer left invisible col--> 
+
+  <div class="col-lg"></div>
+
+    <!-- bootstrap middle automatic centered colored col--> 
+
+      <div class="evalCol col-lg-5 mt-3 border">
+        <?=$inputVariationForm?>
+      </div>
+
+  <!-- bootstrap outer right invisible col--> 
+
+  <div class="col-lg"></div>
 
   </div>
 
-  </form>
+    <!-- bootstrap row3 buttons --> 
+
+    <div class="row">
+
+        <!-- bootstrap outer left invisible col--> 
+
+        <div class="col-lg"></div>
+
+          <!-- bootstrap middle automatic centered col--> 
+
+            <div class="col-lg-5 mt-3 d-flex">
+              
+            <button type="submit" class="btn btn-success me-2">Weiter</button></form>
+            
+            <form action="survey.php" method="get"><button type="submit" name="deleteData" value="yes" class="btn btn-danger me-2">Umfrage Löschen</button></form>
+            
+            <form form action="survey.php" method="get"><button type="submit" name="goBack" value="yes" class="btn btn-secondary">Zurück</button></form>
+
+            </div>
+          
+      <!-- bootstrap outer right invisible col--> 
+
+      <div class="col-lg"></div>
+
+    </div>
+
+ 

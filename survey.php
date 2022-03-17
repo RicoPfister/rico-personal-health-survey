@@ -33,7 +33,7 @@ include 'PHP/header.php'
       <div class="col-lg"></div>
 
       <div class="col-lg-5">
-        <h3 class="navSpace mb-4">Umfrage zur persönliche Gesundheit<h3>
+        <h3 class="navSpace mb-4">Umfrage "Persönliche Gesundheit"<h3>
       </div>
 
       <div class="col-lg"></div>
