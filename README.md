@@ -2,7 +2,7 @@
 
 ## Version
 
-Funktioniernde PHP-Umfrage, realisiert mit:
+Gut funktionierende PHP-Umfrage mit folgenden HIlfsmitteln erstellt:
 * 3 PHP-Seiten, die mit 3 Get-Methode-Buttons arbeiten (+1 leere Index-Startseite)
 * Bootstrap Mobile-(fast)-first umgesetzt
 * Javascript für die Validierung und Slider-Labels
