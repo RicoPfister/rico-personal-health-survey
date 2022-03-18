@@ -1,5 +1,19 @@
 # rico-personal-health-survey
 
+## Version
+
+Funktioniernde PHP-Umfrage, realisiert mit:
+* 3 PHP-Seiten, die mit 3 Get-Methode-Buttons arbeiten (+1 leere Index-Startseite)
+* Bootstrap Mobile-(fast)-first umgesetzt
+* Javascript für die Validierung und Slider-Labels
+* CSS u.a. für Bootstrap-Anpassungen
+* Dynamische Umfrageauswertung, numerisch und per Bild dargestellt
+
+## Nützlicher Code
+
+* \<input type="text" oninput="myFunction()"\><br>
+Execute a JavaScript when a user writes something in an <input> field
+
 ## Arbeitsplanung
 
 15.03.2022
