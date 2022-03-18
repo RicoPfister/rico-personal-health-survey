@@ -11,10 +11,12 @@ Gut funktionierende PHP-Umfrage mit folgenden HIlfsmitteln erstellt:
 
 ## Nützlicher Code
 
-* \<input type="text" oninput="myFunction()"\><br>
-Execute a JavaScript when a user writes something in an <input> field
+* Execute a JavaScript when a user writes something in an <input> field:<br>
+Beispiel 1: \<input type="text" oninput="myFunction()"\><br>
+Beispiel 2: slider.oninput = function() {output.innerHTML = this.value;}
 
-## Arbeitsplanung
+
+## Arbeitsplanung (Versuch einer Planung)
 
 15.03.2022
 1. Wireframe auf Figma erstellen: 3 Seiten und ausgelagerter PHP-Header/Footer
