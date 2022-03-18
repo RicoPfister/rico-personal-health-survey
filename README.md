@@ -3,11 +3,17 @@
 ## Version
 
 Gut funktionierende PHP-Umfrage mit folgenden HIlfsmitteln erstellt:
-* 3 PHP-Seiten, die mit 3 Get-Methode-Buttons arbeiten (+1 leere Index-Startseite)
+* Mit Figma die 3 Seiten skizziert (PHP-includes fehlen):<br>
+https://www.figma.com/file/cYCf32samkQNS41M9TQHtX/Untitled?node-id=0%3A1
+* 3 PHP-Files erstellt, die mit 3 Get-Methode-Buttons arbeiten (+1 leere Index-Startseite):<br>
+  * starting.php: Willkommenstext und Alterseingabe
+  * collection.php: Dynamische Darstellung der 10 Fragen und der Antwortmöglichkeiten
+  * evaluation.php: Dankeschöntext und Auswertungsberechnung sowie deren (dynamische) numerische und bildliche Darstellung
+* Weitere Files:
+  * survey.css: u.a. für Bootstrap-Anpassungen
+  * survey.js: Form-Validierung und Slider-Labels
+  * header.php und footer.php: Auslagerung der navbar und des Copyright-Hinweises
 * Bootstrap Mobile-(fast)-first umgesetzt
-* Javascript für die Validierung und Slider-Labels
-* CSS u.a. für Bootstrap-Anpassungen
-* Dynamische Umfrageauswertung, numerisch und per Bild dargestellt
 
 ## Nützlicher Code
 
