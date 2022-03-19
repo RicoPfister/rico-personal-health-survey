@@ -11,6 +11,6 @@
 
 ## Was fehlt oder was hätte ich anders machen können
 * form slider Beschriftung nicht fertig
-* <?php condition ?> noch nicht verwendet, um code bedingt auszuführen
+* \<?php condition ?\> noch nicht verwendet, um code bedingt auszuführen
 * form bootstrap aria-describedby fehlen
 
