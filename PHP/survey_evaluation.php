@@ -25,13 +25,13 @@ function evaluationData(){
 
 evaluationData();
 
-if($evaluationResult>8){
+if($evaluationResult>7){
   $evaluationResultText = "Sie scheinen <strong>überaus gesund</strong> zu leben und gehören damit zu den 4% der Menschen, die an dieser Umfrage 
   teilgenommen haben. Weiter so! Diese Auswertung ersetzt nicht die fundierte Meinung eines Arztes oder einer Ärztin.";
   $o1 = 0.2; $o2 = 0.2; $o3 = 1.0;
 }
   
-else if ($evaluationResult>4) {$evaluationResultText = "Sie scheinen einen <strong>gesunden</strong> Lebensstil zu führen. Herzlichen Glückwunsch! Diese Auswertung ersetzt 
+else if ($evaluationResult>3) {$evaluationResultText = "Sie scheinen einen <strong>gesunden</strong> Lebensstil zu führen. Herzlichen Glückwunsch! Diese Auswertung ersetzt 
   nicht die fundierte Meinung eines Arztes oder einer Ärztin.";
   $o1 = 0.2; $o2 = 1.0; $o3 = 0.2;
 }
