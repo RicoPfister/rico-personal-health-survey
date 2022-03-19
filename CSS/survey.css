@@ -21,13 +21,19 @@ width: 100px;
 width: 50px;
 }
 
-.image{
-height: 250px;
+.evalTitle{
+    background: lightgrey;
 }
 
-.evalTitle {
-    background: grey;
+.form-range{
+    height:11px;
 }
+
+p {
+    margin: 0;
+}
+
+
 
 /*
 

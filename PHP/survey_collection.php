@@ -17,7 +17,7 @@ $questionPhrases = [
 
 session_start();
 
-// go to current/next/previous question7
+// go to current/next/previous question
 
 global $i;
 
@@ -49,8 +49,9 @@ function inputVariation($i){
     // question 1: range
 
     case "q1":
-    
-    $GLOBALS['inputVariationForm'] = "1<input type='range' class='form-range' min='1' max='5' name='q$i' id='q$i'>5";      
+       
+    $GLOBALS['inputVariationForm'] = "<p class='mt-2'>Von 1: <strong>Überhaupt nicht gesund</strong> bis 5: <strong>Extrem gesund</strong>:</p><br>
+    1 <input type='range' class='form-range' min='1' max='5' name='q$i' id='q$i'> 5<label for='q$i' class='ms-3'>Ihre Antwort: <span id='sliderValue'></span></label>";      
     break;
     
     // question 2: check
@@ -73,7 +74,8 @@ function inputVariation($i){
 
     case "q3":
 
-    $GLOBALS['inputVariationForm'] = "1<input type='range' class='form-range' id='customRange1' min='1' max='5' name='q$i'>5";      
+    $GLOBALS['inputVariationForm'] = "<p class='mt-2'>Von 1: <strong>Überhaupt nicht wichtig</strong> bis 5: <strong>Sehr wichtig</strong>:</p><br>
+    1 <input type='range' class='form-range' id='customRange1' min='1' max='5' name='q$i'> 5<label for='q$i' class='ms-3'>Ihre Antwort: <span id='sliderValue'></span></label>";      
     break;    
 
     // check
@@ -113,8 +115,9 @@ function inputVariation($i){
 
     case "q5":
 
-    $GLOBALS['inputVariationForm'] = "1<input type='range' class='form-range' id='customRange1' min='1' max='5' name='q$i'>5";      
-    break;    
+      $GLOBALS['inputVariationForm'] = "<p class='mt-2'>Von 1: <strong>Viel zu wenig</strong> über 3: <strong>gerade richtig</strong> bis 5: <strong>viel zu viel</strong>:</p><br>
+      1 <input type='range' class='form-range' min='1' max='5' name='q$i' id='q$i'> 5<label for='q$i' class='ms-3'>Ihre Antwort: <span id='sliderValue'></span></label>";      
+      break;  
 
     // number
 
@@ -126,7 +129,7 @@ function inputVariation($i){
     
     $GLOBALS['inputVariationForm'] .= 
     
-    "<input class='number' type='number' name='q$i'>";                
+    "Anzahl: <input class='number' type='number' name='q$i'>";                
     break;
   }
 }
@@ -169,9 +172,9 @@ function inputVariation($i){
 
     <!-- bootstrap middle automatic centered col with border--> 
 
-      <div class="evalCol col-lg-5 mt-3 border">
+      <div class="evalCol col-lg-5 mt-3 p-3 border">
         <?=$inputVariationForm?>
-        <p class="m-0 text-danger fw-bold" id="alert"></p>
+        <p class="text-danger fw-bold" id="alert"></p>
       </div>
 
   <!-- bootstrap outer right invisible col--> 

@@ -28,16 +28,16 @@ evaluationData();
 if($evaluationResult>8){
   $evaluationResultText = "Sie scheinen <strong>überaus gesund</strong> zu leben und gehören damit zu den 4% der Menschen, die an dieser Umfrage 
   teilgenommen haben. Weiter so! Diese Auswertung ersetzt nicht die fundierte Meinung eines Arztes oder einer Ärztin.";
-  $o1 = 0.3; $o2 = 0.3; $o3 = 1.0;
+  $o1 = 0.2; $o2 = 0.2; $o3 = 1.0;
 }
   
 else if ($evaluationResult>4) {$evaluationResultText = "Sie scheinen einen <strong>gesunden</strong> Lebensstil zu führen. Herzlichen Glückwunsch! Diese Auswertung ersetzt 
   nicht die fundierte Meinung eines Arztes oder einer Ärztin.";
-  $o1 = 0.3; $o2 = 1.0; $o3 = 0.3;
+  $o1 = 0.2; $o2 = 1.0; $o3 = 0.2;
 }
 
 else {$evaluationResultText = "Sie scheinen einen <strong>ungesunden</strong> Lebensstil zu führen. Ihr Risiko an Herzversagen zu sterben ist um 42% höher.
-Essen Sie mehr Gemüse! Diese Auswertung ersetzt nicht die fundierte Meinung eines Arztes oder einer Ärztin."; $o1 = 1.0; $o2 = 0.3; $o3 = 0.3;}
+Essen Sie mehr Gemüse! Diese Auswertung ersetzt nicht die fundierte Meinung eines Arztes oder einer Ärztin."; $o1 = 1.0; $o2 = 0.2; $o3 = 0.2;}
 
 ?>
 
@@ -56,9 +56,9 @@ Essen Sie mehr Gemüse! Diese Auswertung ersetzt nicht die fundierte Meinung ein
         <div class="col-lg-5">
           <p>Vielen Dank für die Teilnahme an der Umfrage!</p>
 
-          <p><?=$evaluationResultText?><p>
+          <p class="mt-4"><?=$evaluationResultText?><p>
 
-          <p>Das Testergebnis lautet: <?=$evaluationResult?> von 10 Gesundheitspunkten.<p>
+          <p class="mt-4">Das Testergebnis lautet: <?=$evaluationResult?> von 10 Gesundheitspunkten. Sie entsprechen folgendem Superheldentypus (nicht wissenschaftlich belegt):<p>
           
         </div>
 
@@ -78,15 +78,18 @@ Essen Sie mehr Gemüse! Diese Auswertung ersetzt nicht die fundierte Meinung ein
 
       <!-- bootstrap middle automatic centered col--> 
 
-      <div class="col-lg d-lg-flex">
-        <div><img style="opacity:<?=$o1?>" class="image" src="images/healthy1.jpg" alt="Superheroes"></div>
-        <div><img style="opacity:<?=$o2?>" class="image" src="images/healthy2.jpg" alt="Superheroes"></div>
-        <div><img style="opacity:<?=$o3?>" class="image" src="images/healthy3.jpg" alt="Superheroes"></div>       
+      <div class="col-lg-8 d-lg-flex justify-content-center mt-4">
+        <div><img style="opacity:<?=$o1?>" class="img-fluid p-2 rounded" src="images/healthy1.jpg" alt="Superheroes"></div>
+        <div><img style="opacity:<?=$o2?>" class="img-fluid p-2 rounded" src="images/healthy2.jpg" alt="Superheroes"></div>
+        <div><img style="opacity:<?=$o3?>" class="img-fluid p-2 rounded" src="images/healthy3.jpg" alt="Superheroes"></div>       
       </div>
-    </form>      
 
-    <!-- bootstrap outer right invisible col--> 
+      <!-- bootstrap outer right invisible col--> 
 
-    <div class="col-lg"></div>
+      <div class="col-lg"></div>
 
   </div>
+
+       
+
+  
