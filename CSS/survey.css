@@ -1,5 +1,5 @@
 .container{
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 html, body{
@@ -11,10 +11,6 @@ html, body{
 
 .navbar{
     background: rgb(0,46,0);
-}
-
-.form-range{
-width: 100px;
 }
 
 .number{
@@ -33,7 +29,74 @@ p {
     margin: 0;
 }
 
+.question-col {
+    margin: 0;
+    background: 0;
+    border: 0;
+}
 
+/* mobile view adjustments */
+
+@media only screen and (max-width: 400px) {
+
+h5, h3, label, input, p {
+    font-size: 14px;
+}
+
+small {
+    font-size: 12px;
+}
+
+.container{
+    margin-top: 6rem;
+}
+   
+}
+
+/* slider style */
+
+.range {
+    width: 100%;
+}
+
+.bubble {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    font-size: 13px;
+    border-radius: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    border: 1px solid grey;
+    transform: translateX(-50%);
+    top:-8px;
+}
+
+.bubble:before  {
+	content: "";
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 12px solid grey;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;    
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	margin-top: -1px;
+}
+
+.text-muted, .bubble {
+    -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+    }
 
 /*
 
@@ -42,3 +105,4 @@ p {
    }
 
 */
+

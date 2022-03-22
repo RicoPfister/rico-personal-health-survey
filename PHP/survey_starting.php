@@ -17,7 +17,7 @@
 
           <form name="evaluation" action="survey.php" methode="get" onsubmit="return validateForm('age')";>
             <label class="mt-4"for="age">Bitte geben Sie Ihr <strong>Alter</strong> an und es kann losgehen:</label>
-            <input class="number" type="number" name="age">
+            <input class="number" type="number" name="age" id="age" value="">
             <p class="m-0 text-danger fw-bold" id="alert"></p>
 
         </div>
@@ -28,7 +28,7 @@
 
   </div>
 
-  <!-- bootstrap row2 form button --> 
+  <!--? bootstrap row2 form button --> 
 
   <div class="row">
 

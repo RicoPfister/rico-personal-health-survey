@@ -60,7 +60,7 @@ $_SESSION += $_GET;
 
 // check and create include -->
 
-if($_SESSION["q10"]!="") {include 'PHP/survey_evaluation.php';}
+if($_SESSION["q10"]!="") {include 'PHP/survey_feedback.php';}
 else if ($_SESSION["age"]) {include 'PHP/survey_collection.php';}
 else {include 'PHP/survey_starting.php';}
 

@@ -1,19 +1,6 @@
 <?php
 
-// qestions text array
-
-$questionPhrases = [
-"q1" => "Frage 1: Wie gesund sind Sie körperlich?",
-"q2" => "Frage 2: Nehmen Sie Nahrungsergänzungsmittel?",
-"q3" => "Frage 3: Wie wichtig ist köperliche Aktivität für Sie?",
-"q4" => "Frage 4: Welche zusätzliche körperliche Aktivität betreiben Sie am meisten?",
-"q5" => "Frage 5: Haben Sie das Gefühl, zu wenig, genügend oder viel zu viel zusätzliche körperliche Aktivitäten zu betreiben?",
-"q6" => "Frage 6: An einem typischen Tag: Wie viele Ihrer Malzeiten oder Snacks enthalten Kohlenhydrate?",
-"q7" => "Frage 7: An einem typischen Tag: Wie viele Ihrer Malzeiten oder Snacks enthalten Protein?",
-"q8" => "Frage 8: An einem typischen Tag: Wie viele Ihrer Malzeiten oder Snacks enthalten Gemüse?",
-"q9" => "Frage 9: An einem typischen Tag: Wie viele Ihrer Malzeiten oder Snacks enthalten Früchte?",
-"q10" => "Frage 10: An einem typischen Tag: Wie viele Ihrer Malzeiten kommen aus der Mikrowelle oder sind schon fertig zubereitet?"
-];
+include 'survey_questions_answers.php';
 
 session_start();
 
@@ -50,8 +37,10 @@ function inputVariation($i){
 
     case "q1":
        
-    $GLOBALS['inputVariationForm'] = "<p class='mt-2'>Von 1: <strong>Überhaupt nicht gesund</strong> bis 5: <strong>Extrem gesund</strong>:</p><br>
-    1 <input type='range' class='form-range' min='1' max='5' name='q$i' id='q$i'> 5<label for='q$i' class='ms-3'>Ihre Antwort: <span id='sliderValue'></span></label>";      
+    $GLOBALS['inputVariationForm'] ="<label for='range' class='form-label'>Wählen Sie einen Wert zwischen 1 und 5</label><br><br>
+    <div class='rangeWidth'><div class='bubble' id='bubble'></div><input type='range' class='range' id='range' min='1' max='5' name='q$i' id='q$i'>
+
+    <div class='d-flex justify-content-between'><small class='text-muted'>Überhaupt nicht gesund</small><small class='text-muted'>Extrem gesund</small></div></div>";      
     break;
     
     // question 2: check
@@ -73,10 +62,11 @@ function inputVariation($i){
     // question 3: range
 
     case "q3":
-
-    $GLOBALS['inputVariationForm'] = "<p class='mt-2'>Von 1: <strong>Überhaupt nicht wichtig</strong> bis 5: <strong>Sehr wichtig</strong>:</p><br>
-    1 <input type='range' class='form-range' id='customRange1' min='1' max='5' name='q$i'> 5<label for='q$i' class='ms-3'>Ihre Antwort: <span id='sliderValue'></span></label>";      
-    break;    
+    
+    $GLOBALS['inputVariationForm'] ="<label for='range' class='form-label'>Wählen Sie einen Wert zwischen 1 und 5</label><br><br>
+    <div class='rangeWidth'><div class='bubble' id='bubble'></div><input type='range' class='range' id='range' min='1' max='5' name='q$i' id='q$i'>
+    <div class='d-flex justify-content-between'><small class='text-muted'>Überhaupt nicht wichtig</small><small class='text-muted'>Sehr wichtig</small></div></div>";
+    break;
 
     // check
 
@@ -114,10 +104,11 @@ function inputVariation($i){
     // question 5: range
 
     case "q5":
-
-      $GLOBALS['inputVariationForm'] = "<p class='mt-2'>Von 1: <strong>Viel zu wenig</strong> über 3: <strong>gerade richtig</strong> bis 5: <strong>viel zu viel</strong>:</p><br>
-      1 <input type='range' class='form-range' min='1' max='5' name='q$i' id='q$i'> 5<label for='q$i' class='ms-3'>Ihre Antwort: <span id='sliderValue'></span></label>";      
-      break;  
+   
+    $GLOBALS['inputVariationForm'] ="<label for='range' class='form-label'>Wählen Sie einen Wert zwischen 1 und 5</label><br><br>
+    <div class='rangeWidth'><div class='bubble' id='bubble'></div><input type='range' class='range' id='range' min='1' max='5' name='q$i' id='q$i'>
+    <div class='d-flex justify-content-between'><small class='text-muted'>Viel zu wenig</small><small class='text-muted'>gerade richtig</small><small class='text-muted'>viel zu viel</small></div></div>";
+    break;
 
     // number
 
@@ -193,13 +184,13 @@ function inputVariation($i){
 
           <!-- bootstrap middle automatic centered col--> 
 
-            <div class="col-lg-5 mt-3 d-flex">
+            <div class="col-lg-5 mt-2 float-start">
               
-            <button type="submit" class="btn btn-success me-2">Weiter</button></form>
+            <button type="submit" class="btn btn-success float-start m-1">Weiter</button></form>
             
-            <form action="survey.php" method="get"><button type="submit" name="deleteData" value="yes" class="btn btn-danger me-2">Umfrage Löschen</button></form>
+            <form action="survey.php" method="get"><button type="submit" name="deleteData" value="yes" class="btn btn-danger float-start m-1">Umfrage Löschen</button></form>
             
-            <form form action="survey.php" method="get"><button type="submit" name="goBack" value="yes" class="btn btn-secondary">Zurück</button></form>
+            <form form action="survey.php" method="get"><button type="submit" name="goBack" value="yes" class="btn btn-secondary m-1">Zurück</button></form>
 
             </div>
           
