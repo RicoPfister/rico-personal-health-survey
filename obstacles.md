@@ -9,8 +9,11 @@
 * Arraylängencheck mit count() statt .length
 * Verkettung durch . und nicht durch +
 
+Bootstrap
+* Standartelemente (nur) mit CSS abzuändern führte zu massiven Anzeigeproblemen in unterschiedlichen Browsern und Bildschirmauflösungen.
+* Range-Slider in Desktop-Ansicht vertikal versuchen auszurichten, um Änderungen an der Mobile-Ansicht zu minimieren.
+
 ## Was fehlt oder was hätte ich anders machen können
-* form slider Beschriftung nicht fertig
-* \<?php condition ?\> noch nicht verwendet, um code bedingt auszuführen
+* <?php condition ?> noch nicht verwendet
 * form bootstrap aria-describedby fehlen
 

@@ -2,17 +2,19 @@
 
 ## Version
 
-Gut funktionierende PHP-Umfrage mit folgenden HIlfsmitteln erstellt:
+Gut funktionierende PHP-Mobile-First-Umfrage mit folgenden Hilfsmitteln erstellt:
 * Mit Figma die 3 Seiten skizziert (PHP-includes fehlen):<br>
 https://www.figma.com/file/cYCf32samkQNS41M9TQHtX/Untitled?node-id=0%3A1
 * 3 PHP-Files erstellt, die mit 3 Get-Methode-Buttons arbeiten (+1 leere Index-Startseite):<br>
   * starting.php: Willkommenstext und Alterseingabe
-  * collection.php: Dynamische Darstellung der 10 Fragen und der Antwortmöglichkeiten
-  * evaluation.php: Dankeschöntext und Auswertungsberechnung sowie deren (dynamische) numerische und bildliche Darstellung
+  * collection.php: Dynamische Darstellung der 10 Fragen und der Antwortmöglichkeiten mit JS-Validierung/Labelling
+  * feedback.php: Dankeschöntext und Auswertungsberechnung sowie deren (dynamische) numerische und bildliche Darstellung
 * Weitere Files:
   * survey.css: u.a. für Bootstrap-Anpassungen
   * survey.js: Form-Validierung und Slider-Labels
   * header.php und footer.php: Auslagerung der navbar und des Copyright-Hinweises
+  * questions.php: Auslagerung der Fragen zwecks besserer Übersichtlichkeit
+  * evaluation.php: Auslagerung der Auswertung zwecks besserer Übersichtlichkeit
 * Bootstrap Mobile-(fast)-first umgesetzt
 
 ## Nützlicher Code
@@ -35,4 +37,8 @@ Beispiel 2: slider.oninput = function() {output.innerHTML = this.value;}
 
 17.03.2022
 1. Survey-Auswertung hinzugefügen
+
+## Das mache ich beim nächssten Problem anders
+1. Restliche Zeit nicht mit Design-Schnickschnack verschwenden (das Erstellen eigener Form-Range-Slider
+war eine Qual), lieber anderen helfen (andere scheinen grundlegendere Codingprobleme zu haben...).
 
