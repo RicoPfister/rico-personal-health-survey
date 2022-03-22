@@ -13,9 +13,9 @@ https://www.figma.com/file/cYCf32samkQNS41M9TQHtX/Untitled?node-id=0%3A1
   * survey.css: u.a. für Bootstrap-Anpassungen
   * survey.js: Form-Validierung und Slider-Labels
   * header.php und footer.php: Auslagerung der navbar und des Copyright-Hinweises
-  * questions.php: Auslagerung der Fragen zwecks besserer Übersichtlichkeit
+  * survey_questions_answers: Auslagerung der Fragen/Kommentarantworten zwecks besserer Übersichtlichkeit
   * evaluation.php: Auslagerung der Auswertung zwecks besserer Übersichtlichkeit
-* Bootstrap Mobile-(fast)-first umgesetzt
+* Bootstrap Mobile-first umgesetzt
 
 ## Nützlicher Code
 
@@ -38,7 +38,7 @@ Beispiel 2: slider.oninput = function() {output.innerHTML = this.value;}
 17.03.2022
 1. Survey-Auswertung hinzugefügen
 
-## Das mache ich beim nächssten Problem anders
-1. Restliche Zeit nicht mit Design-Schnickschnack verschwenden (das Erstellen eigener Form-Range-Slider
+## Das mache ich beim nächsten Projekt anders
+1. Restliche Zeit nicht mit Design-Schnickschnack verschwenden (das Erstellen eines eigenen Form-Range-Slider
 war eine Qual), lieber anderen helfen (andere scheinen grundlegendere Codingprobleme zu haben...).
 
