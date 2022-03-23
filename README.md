@@ -13,16 +13,17 @@ https://www.figma.com/file/cYCf32samkQNS41M9TQHtX/Untitled?node-id=0%3A1
   * survey.css: u.a. für Bootstrap-Anpassungen
   * survey.js: Form-Validierung und Slider-Labels
   * header.php und footer.php: Auslagerung der navbar und des Copyright-Hinweises
-  * questions.php: Auslagerung der Fragen zwecks besserer Übersichtlichkeit
+  * survey_questions_answers.php: Auslagerung der Fragen/Kommentarantworten zwecks besserer Übersichtlichkeit
   * evaluation.php: Auslagerung der Auswertung zwecks besserer Übersichtlichkeit
 * Bootstrap Mobile-(fast)-first umgesetzt
 
 ## Versionen
 
-1.3 Fragen 3-10 ergänzt; Rechtschreibfehler korrigiert; Anzeigebreite von 5 auf 6 erhöht; PHP-Fehlermeldungen korrigiert 
+1.4 Fragen 3-10 ergänzt; Rechtschreibfehler korrigiert; Anzeigebreite von 5 auf 6 erhöht; PHP-Fehlermeldungen korrigiert 
 nach Aktivierung von display_errors in php.ini
-1.2 Fragen/Antworten in eigenes PHP-File ausgelagert; Feedback mit Antwortkommentaren ergänzt; Javascript-Validierung hinzugefügt
-1.1 PHP-Funktionen hinzugefügt; Bootstrap erweitert/angepasst
+1.3 Fragen/Antworten in eigenes PHP-File ausgelagert; Feedback mit Antwortkommentaren 1-2 ergänzt; Javascript-Validierung hinzugefügt
+1.2 PHP-Funktionen hinzugefügt; Bootstrap erweitert/angepasst
+1.1 Diverse Verbesserungen (nicht dokumentiert)
 1.0 PHP/Bootstrap-Grundgerüst erstellt: index.php; starting.php; collection.php und evaluation.php
 
 ## Nützlicher Code
@@ -46,7 +47,7 @@ Beispiel 2: slider.oninput = function() {output.innerHTML = this.value;}
 17.03.2022
 1. Survey-Auswertung hinzugefügen
 
-## Das mache ich beim nächssten Problem anders
-1. Wenn ich Projekt wieder früher fertig habe, dann restliche Zeit nicht mit Design-Schnickschnack verschwenden (das Erstellen eigener Form-Range-Slider
+## Das mache ich beim nächsten Projekt anders
+1. Restliche Zeit nicht mit Design-Schnickschnack verschwenden (das Erstellen eines eigenen Form-Range-Slider
 war eine Qual), lieber anderen helfen (andere scheinen grundlegendere Codingprobleme zu haben...).
 
