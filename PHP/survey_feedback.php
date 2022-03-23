@@ -67,7 +67,7 @@
       <p><strong>Auswertung:</strong> <?=$answerAge?></p><br>
       
       <p><strong><?=$questionPhrases["q1"]?></strong></p>
-      <p><strong>Antwort:</strong> <?=$_SESSION["q1"]?> von 5</p>
+      <p><strong>Antwort:</strong> <?=$_SESSION["q1"]?> von 5 (3 gibt 1 Punkt)</p>
       <p><strong>Auswertung:</strong> <?=$answerText1?></p><br>
   
       <p><strong><?=$questionPhrases["q2"]?></strong></p>
@@ -75,7 +75,7 @@
       <p><strong>Auswertung:</strong> <?=$answerText2?></p><br>
 
       <p><strong><?=$questionPhrases["q3"]?></strong></p>
-      <p><strong>Antwort:</strong> <?=$_SESSION["q3"]?> von 5</p>
+      <p><strong>Antwort:</strong> <?=$_SESSION["q3"]?> von 5 (3 gibt 1 Punkt)</p>
       <p><strong>Auswertung:</strong> <?=$answerText3?></p><br>
 
       <p><strong><?=$questionPhrases["q4"]?></strong></p>
@@ -83,7 +83,7 @@
       <p><strong>Auswertung:</strong> <?=$answerText4?></p><br>
 
       <p><strong><?=$questionPhrases["q5"]?></strong></p>
-      <p><strong>Antwort:</strong> <?=$_SESSION["q5"]?> von 5</p>
+      <p><strong>Antwort:</strong> <?=$_SESSION["q5"]?> von 5 (3 gibt 1 Punkt)</p>
       <p><strong>Auswertung:</strong> <?=$answerText5?></p><br>
 
       <p><strong><?=$questionPhrases["q6"]?></strong></p>

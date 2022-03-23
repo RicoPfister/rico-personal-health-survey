@@ -14,17 +14,17 @@
 
 <!-- helps to set footer to the page bottom -->
 
-<body class="d-flex flex-column min-vh-100">
-
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
 <!-- include navbar -->
 
 <?php
 include 'PHP/header.php';
+include 'PHP/test.php';
 ?>
+
 
 <!-- bootstrap container/html -->
 
