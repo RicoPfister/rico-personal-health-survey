@@ -19,10 +19,21 @@ $questionPhrases = [
 
 $answerPhrases = [
     "a1" => "Sie leben überaus gesund. Glückwunsch! Aber: Vielleicht darfs auch etwas weniger sein?",
-    "a2" => "Alles gut. Weiter so!",
-    "a3" => "Ändern Sie ihre bedenkliche Gesundheitseinstellung, es ist dringend!",
+    "a2" => "Keine Beanstandung.",
+    "a3" => "Ändern Sie Ihre bedenkliche Gesundheitseinstellung, es ist dringend!",
     "a4" => "Sie sind jung. Bewegen Sie sich genug und essen Sie ausgewogen und dann [...]",
     "a5" => "Sie sind in einem fortgeschrittenem Alter. Denken Sie daran, dass [...]"
     ];
+
+// answers comment text array
+
+$answersCommentPhrases = [
+    "aC1" => "Sie scheinen <strong>überaus gesund</strong> zu leben und gehören damit zu den 4% der Menschen, die an dieser Umfrage 
+    teilgenommen haben. Vielleicht ist aber weniger mehr! Diese Auswertung ersetzt nicht die fundierte Meinung eines Arztes oder einer Ärztin.",
+    "aC2" => "Sie scheinen einen <strong>gesunden</strong> Lebensstil zu führen. Herzlichen Glückwunsch! Diese Auswertung ersetzt 
+    nicht die fundierte Meinung eines Arztes oder einer Ärztin.",
+    "aC3" => "Sie scheinen einen <strong>ungesunden</strong> Lebensstil zu führen. Ihr Risiko an Herzversagen zu sterben ist um 42% höher.
+    Essen Sie mehr Gemüse! Diese Auswertung ersetzt nicht die fundierte Meinung eines Arztes oder einer Ärztin.",
+    ]
 
 ?>

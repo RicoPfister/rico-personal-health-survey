@@ -2,17 +2,15 @@
 
 include 'survey_questions_answers.php';
 
-session_start();
-
 // go to current/next/previous question
 
 global $i;
 
 for($i=1; $i<=count($questionPhrases); $i++){
 
-  if($_SESSION["q$i"] == ""){
+  if(isset($_SESSION["q$i"]) == ""){
        
-      if($_SESSION["goBack"]){
+      if(isset($_SESSION["goBack"])){
         $i--;
         $question = $questionPhrases["q$i"];
         unset($_SESSION["goBack"]);
@@ -116,9 +114,9 @@ function inputVariation($i){
     case "q7":
     case "q8":
     case "q9":
-    case "q10":
-    
-    $GLOBALS['inputVariationForm'] .= 
+    case "q10";
+   
+    $GLOBALS['inputVariationForm'] = 
     
     "Anzahl: <input class='number' type='number' name='q$i'>";                
     break;
@@ -143,7 +141,7 @@ function inputVariation($i){
 
           <!-- bootstrap middle automatic centered colored col--> 
 
-          <div class="evalTitle col-lg-5">
+          <div class="evalTitle col-lg-6">
             <h5 class="m-0"><?=$question?></h5>
           </div>
 
@@ -163,7 +161,7 @@ function inputVariation($i){
 
     <!-- bootstrap middle automatic centered col with border--> 
 
-      <div class="evalCol col-lg-5 mt-3 p-3 border">
+      <div class="evalCol col-lg-6 mt-3 p-3 border">
         <?=$inputVariationForm?>
         <p class="text-danger fw-bold" id="alert"></p>
       </div>
@@ -184,7 +182,7 @@ function inputVariation($i){
 
           <!-- bootstrap middle automatic centered col--> 
 
-            <div class="col-lg-5 mt-2 float-start">
+            <div class="col-lg-6 mt-2 float-start">
               
             <button type="submit" class="btn btn-success float-start m-1">Weiter</button></form>
             

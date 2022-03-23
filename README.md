@@ -1,6 +1,6 @@
 # rico-personal-health-survey
 
-## Version
+## Projekübersicht
 
 Gut funktionierende PHP-Mobile-First-Umfrage mit folgenden Hilfsmitteln erstellt:
 * Mit Figma die 3 Seiten skizziert (PHP-includes fehlen):<br>
@@ -13,9 +13,18 @@ https://www.figma.com/file/cYCf32samkQNS41M9TQHtX/Untitled?node-id=0%3A1
   * survey.css: u.a. für Bootstrap-Anpassungen
   * survey.js: Form-Validierung und Slider-Labels
   * header.php und footer.php: Auslagerung der navbar und des Copyright-Hinweises
-  * survey_questions_answers: Auslagerung der Fragen/Kommentarantworten zwecks besserer Übersichtlichkeit
+  * survey_questions_answers.php: Auslagerung der Fragen/Kommentarantworten zwecks besserer Übersichtlichkeit
   * evaluation.php: Auslagerung der Auswertung zwecks besserer Übersichtlichkeit
-* Bootstrap Mobile-first umgesetzt
+* Bootstrap Mobile-(fast)-first umgesetzt
+
+## Versionen
+
+1.4 Fragen 3-10 ergänzt; Rechtschreibfehler korrigiert; Anzeigebreite von 5 auf 6 erhöht; PHP-Fehlermeldungen korrigiert 
+nach Aktivierung von display_errors in php.ini
+1.3 Fragen/Antworten in eigenes PHP-File ausgelagert; Feedback mit Antwortkommentaren 1-2 ergänzt; Javascript-Validierung hinzugefügt
+1.2 PHP-Funktionen hinzugefügt; Bootstrap erweitert/angepasst
+1.1 Diverse Verbesserungen (nicht dokumentiert)
+1.0 PHP/Bootstrap-Grundgerüst erstellt: index.php; starting.php; collection.php und evaluation.php
 
 ## Nützlicher Code
 

@@ -23,7 +23,7 @@
 <!-- include navbar -->
 
 <?php
-include 'PHP/header.php'
+include 'PHP/header.php';
 ?>
 
 <!-- bootstrap container/html -->

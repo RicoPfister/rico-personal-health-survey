@@ -10,7 +10,7 @@
 
         <!-- bootstrap middle automatic centered colored col--> 
 
-        <div class="col-lg-5">
+        <div class="col-lg-6">
           <p>Vielen Dank, dass Sie an dieser Umfrage teilnehmen. Die folgenden 10 Fragen helfen uns... 
           [Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
           ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam]</p>
