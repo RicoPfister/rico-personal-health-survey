@@ -1,6 +1,6 @@
 # rico-personal-health-survey
 
-## Version
+## Projekübersicht
 
 Gut funktionierende PHP-Mobile-First-Umfrage mit folgenden Hilfsmitteln erstellt:
 * Mit Figma die 3 Seiten skizziert (PHP-includes fehlen):<br>
@@ -16,6 +16,14 @@ https://www.figma.com/file/cYCf32samkQNS41M9TQHtX/Untitled?node-id=0%3A1
   * questions.php: Auslagerung der Fragen zwecks besserer Übersichtlichkeit
   * evaluation.php: Auslagerung der Auswertung zwecks besserer Übersichtlichkeit
 * Bootstrap Mobile-(fast)-first umgesetzt
+
+## Versionen
+
+1.3 Fragen 3-10 ergänzt; Rechtschreibfehler korrigiert; Anzeigebreite von 5 auf 6 erhöht; PHP-Fehlermeldungen korrigiert 
+nach Aktivierung von display_errors in php.ini
+1.2 Fragen/Antworten in eigenes PHP-File ausgelagert; Feedback mit Antwortkommentaren ergänzt; Javascript-Validierung hinzugefügt
+1.1 PHP-Funktionen hinzugefügt; Bootstrap erweitert/angepasst
+1.0 PHP/Bootstrap-Grundgerüst erstellt: index.php; starting.php; collection.php und evaluation.php
 
 ## Nützlicher Code
 
@@ -39,6 +47,6 @@ Beispiel 2: slider.oninput = function() {output.innerHTML = this.value;}
 1. Survey-Auswertung hinzugefügen
 
 ## Das mache ich beim nächssten Problem anders
-1. Restliche Zeit nicht mit Design-Schnickschnack verschwenden (das Erstellen eigener Form-Range-Slider
+1. Wenn ich Projekt wieder früher fertig habe, dann restliche Zeit nicht mit Design-Schnickschnack verschwenden (das Erstellen eigener Form-Range-Slider
 war eine Qual), lieber anderen helfen (andere scheinen grundlegendere Codingprobleme zu haben...).
 

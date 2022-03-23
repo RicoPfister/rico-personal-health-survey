@@ -32,7 +32,7 @@ include 'PHP/header.php'
 
       <div class="col-lg"></div>
 
-      <div class="col-lg-5">
+      <div class="col-lg-6">
         <h3 class="navSpace mb-4">Umfrage "Persönliche Gesundheit"<h3>
       </div>
 
@@ -45,12 +45,12 @@ session_start();
 
 // check and delete GET session
 
-if($_GET["deleteData"]){
+if(isset($_GET["deleteData"])){
   $_SESSION = [];
   $_GET = [];
 }
 
-if($_GET["age"] && !$_GET["q1"]){
+if(isset($_GET["age"]) && !isset($_GET["q1"])){
   $_SESSION["age"] = $_GET["age"];
 }
 
@@ -60,8 +60,8 @@ $_SESSION += $_GET;
 
 // check and create include -->
 
-if($_SESSION["q10"]!="") {include 'PHP/survey_feedback.php';}
-else if ($_SESSION["age"]) {include 'PHP/survey_collection.php';}
+if(isset($_SESSION["q10"])) {include 'PHP/survey_feedback.php';}
+else if (isset($_SESSION["age"])) {include 'PHP/survey_collection.php';}
 else {include 'PHP/survey_starting.php';}
 
 ?>

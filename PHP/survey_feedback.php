@@ -13,7 +13,7 @@
 
         <!-- bootstrap middle automatic centered colored col--> 
 
-        <div class="col-lg-5">
+        <div class="col-lg-6">
           <p>Vielen Dank für die Teilnahme an der Umfrage!</p>
 
           <p class="mt-4"><?=$evaluationResultText?><p>
@@ -60,7 +60,7 @@
 
       <!-- bootstrap middle automatic centered col--> 
 
-      <div class="col-lg-5 mt-4">
+      <div class="col-lg-6 mt-4">
       <p>Detaillierte Auswertung:</p><br>
 
       <p><strong>Ihr Alter: </strong><?=$_SESSION["age"]?></p>
@@ -71,10 +71,40 @@
       <p><strong>Auswertung:</strong> <?=$answerText1?></p><br>
   
       <p><strong><?=$questionPhrases["q2"]?></strong></p>
-      <p><strong>Antwort:</strong> <?=$_SESSION["q2"]?></p>
+      <p><strong>Antwort:</strong> <?=$answer2Text?></p>
       <p><strong>Auswertung:</strong> <?=$answerText2?></p><br>
 
-      <p>[Work in progres...]</p>
+      <p><strong><?=$questionPhrases["q3"]?></strong></p>
+      <p><strong>Antwort:</strong> <?=$_SESSION["q3"]?> von 5</p>
+      <p><strong>Auswertung:</strong> <?=$answerText3?></p><br>
+
+      <p><strong><?=$questionPhrases["q4"]?></strong></p>
+      <p><strong>Antwort:</strong> <?=$answer4Text?></p>
+      <p><strong>Auswertung:</strong> <?=$answerText4?></p><br>
+
+      <p><strong><?=$questionPhrases["q5"]?></strong></p>
+      <p><strong>Antwort:</strong> <?=$_SESSION["q5"]?> von 5</p>
+      <p><strong>Auswertung:</strong> <?=$answerText5?></p><br>
+
+      <p><strong><?=$questionPhrases["q6"]?></strong></p>
+      <p><strong>Antwort:</strong> <?=$answer6Text?></p>
+      <p><strong>Auswertung:</strong> <?=$answerText6?></p><br>
+
+      <p><strong><?=$questionPhrases["q7"]?></strong></p>
+      <p><strong>Antwort:</strong> <?=$answer7Text?></p>
+      <p><strong>Auswertung:</strong> <?=$answerText7?></p><br>
+
+      <p><strong><?=$questionPhrases["q8"]?></strong></p>
+      <p><strong>Antwort:</strong> <?=$answer8Text?></p>
+      <p><strong>Auswertung:</strong> <?=$answerText8?></p><br>
+
+      <p><strong><?=$questionPhrases["q9"]?></strong></p>
+      <p><strong>Antwort:</strong> <?=$answer9Text?></p>
+      <p><strong>Auswertung:</strong> <?=$answerText9?></p><br>
+
+      <p><strong><?=$questionPhrases["q10"]?></strong></p>
+      <p><strong>Antwort:</strong> <?=$answer10Text?></p>
+      <p><strong>Auswertung:</strong> <?=$answerText10?></p><br>
       </div>
 
       <!-- bootstrap outer right invisible col--> 
