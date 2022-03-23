@@ -20,7 +20,7 @@ $questionPhrases = [
 $answerPhrases = [
     "a1" => "Sie leben überaus gesund. Glückwunsch! Aber: Vielleicht darfs auch etwas weniger sein?",
     "a2" => "Keine Beanstandung.",
-    "a3" => "Ändern Sie Ihre bedenkliche Gesundheitseinstellung, es ist dringend!",
+    "a3" => "Sie könnten etwas mehr für Ihre Gesundheit tun, der Wert ist tief.",
     "a4" => "Sie sind jung. Bewegen Sie sich genug und essen Sie ausgewogen und dann [...]",
     "a5" => "Sie sind in einem fortgeschrittenem Alter. Denken Sie daran, dass [...]"
     ];
