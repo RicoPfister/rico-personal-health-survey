@@ -22,7 +22,6 @@
 
 <?php
 include 'PHP/header.php';
-include 'PHP/test.php';
 ?>
 
 

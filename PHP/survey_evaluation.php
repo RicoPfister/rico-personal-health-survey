@@ -17,7 +17,7 @@ function evaluationData(){
   if($_SESSION["q7"]==2) $evaluationResult+=1;
   if($_SESSION["q8"]==1) $evaluationResult+=1;
   if($_SESSION["q9"]==1) $evaluationResult+=1;
-  if($_SESSION["q10"]==1) $evaluationResult+=1;
+  if($_SESSION["q10"]==0) $evaluationResult+=1;
   
   }
 
@@ -99,9 +99,8 @@ if($_SESSION["q9"]>1) {$answer9Text = "Mehr als eine (0 Punkte)"; $answer9Commen
 
 // answer 10 comment
 
-if($_SESSION["q10"]==0) {$answer10Text = "Keine (0 Punkte)"; $answer10Comment = 3;}
-if($_SESSION["q10"]==1) {$answer10Text = "Eine (1 Punkt)"; $answer10Comment = 1;}
-if($_SESSION["q10"]>1) {$answer10Text = "Mehr als eine (0 Punkte)"; $answer10Comment = 3;}
+if($_SESSION["q10"]==0) {$answer10Text = "Keine (1 Punkte)"; $answer10Comment = 1;}
+if($_SESSION["q10"]>0) {$answer10Text = "Eine (0 Punkt)"; $answer10Comment = 3;}
 
 // variable comment
 
